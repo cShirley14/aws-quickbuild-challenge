@@ -445,6 +445,11 @@ body {
   font-family: var(--font-body);
 }
 
+.form-group select option {
+  background: #1a1020;
+  color: #f5f2ee;
+}
+
 .form-group input::placeholder {
   color: rgba(184, 169, 144, 0.4);
 }
