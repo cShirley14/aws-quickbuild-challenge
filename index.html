@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Tabernacle Concierge — Atlanta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Venue background (fixed, parallax-like) -->
+  <div class="venue-bg" role="img" aria-label="View from the stage at The Tabernacle, Atlanta — crowd fills the ornate balconies beneath the historic painted ceiling"></div>
+
+  <!-- Three.js canvas for ambient particles + stage light flash -->
+  <canvas id="stage-fx" aria-hidden="true"></canvas>
+
+  <!-- Page content -->
+  <div class="page">
+
+    <header class="hero">
+      <div class="hero-content">
+        <p class="hero-pre">Atlanta's Legendary Venue</p>
+        <h1>The Tabernacle<br><em class="accent">Concierge</em></h1>
+        <p class="hero-sub">Your night. Elevated.</p>
+        <a href="#packages" class="cta-btn">See Packages</a>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">↓</div>
+    </header>
+
+    <main>
+      <!-- Upcoming Events -->
+      <section id="events" class="section events" aria-labelledby="events-heading">
+        <div class="section-inner">
+          <h2 id="events-heading" class="reveal">Upcoming Shows</h2>
+          <p class="section-intro reveal">See what's next at The Tabernacle. Pick your night — we'll handle the rest.</p>
+
+          <div class="events-list">
+            <article class="event-card reveal">
+              <div class="event-date">
+                <span class="month">AUG</span>
+                <span class="day">21</span>
+              </div>
+              <div class="event-info">
+                <h3>Poppy</h3>
+                <p>Constantly Nowhere Tour</p>
+              </div>
+              <span class="event-time">8 PM</span>
+            </article>
+
+            <article class="event-card reveal">
+              <div class="event-date">
+                <span class="month">AUG</span>
+                <span class="day">22</span>
+              </div>
+              <div class="event-info">
+                <h3>Calle 24</h3>
+                <p>Eterno Tour</p>
+              </div>
+              <span class="event-time">8 PM</span>
+            </article>
+
+            <article class="event-card reveal">
+              <div class="event-date">
+                <span class="month">AUG</span>
+                <span class="day">29</span>
+              </div>
+              <div class="event-info">
+                <h3>Eslabón Armado</h3>
+                <p>Amor Nocturno</p>
+              </div>
+              <span class="event-time">8 PM</span>
+            </article>
+
+            <article class="event-card reveal">
+              <div class="event-date">
+                <span class="month">SEP</span>
+                <span class="day">5</span>
+              </div>
+              <div class="event-info">
+                <h3>Sevendust & Theory of a Deadman</h3>
+                <p>The Dead / Seven Tour</p>
+              </div>
+              <span class="event-time">7 PM</span>
+            </article>
+
+            <article class="event-card reveal">
+              <div class="event-date">
+                <span class="month">SEP</span>
+                <span class="day">24</span>
+              </div>
+              <div class="event-info">
+                <h3>Houndmouth</h3>
+                <p>Live at The Tabernacle</p>
+              </div>
+              <span class="event-time">8 PM</span>
+            </article>
+
+            <article class="event-card reveal">
+              <div class="event-date">
+                <span class="month">SEP</span>
+                <span class="day">25</span>
+              </div>
+              <div class="event-info">
+                <h3>Cameron Whitcomb</h3>
+                <p>Kingdom of Fear Tour</p>
+              </div>
+              <span class="event-time">8 PM</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Packages -->
+      <section id="packages" class="section packages" aria-labelledby="pkg-heading">
+        <div class="section-inner">
+          <h2 id="pkg-heading" class="reveal">Concierge Packages</h2>
+          <p class="section-intro reveal">From the moment you arrive to the last encore — we handle the details so you live the moment.</p>
+
+          <div class="package-grid">
+            <article class="package-card reveal">
+              <div class="card-header">
+                <h3>Pre-Show</h3>
+                <p class="price">$75</p>
+              </div>
+              <ul>
+                <li>Reserved parking coordination</li>
+                <li>Restaurant reservations nearby</li>
+                <li>Fast-lane entry assistance</li>
+                <li>Real-time text updates</li>
+              </ul>
+              <a href="#signup" class="card-btn" data-package="pre-show">Reserve</a>
+            </article>
+
+            <article class="package-card featured reveal">
+              <div class="card-badge">Most Popular</div>
+              <div class="card-header">
+                <h3>VIP Night</h3>
+                <p class="price">$150</p>
+              </div>
+              <ul>
+                <li>Everything in Pre-Show</li>
+                <li>Premium balcony access</li>
+                <li>Drink package (3 drinks)</li>
+                <li>Dedicated concierge line</li>
+                <li>Post-show car pickup</li>
+              </ul>
+              <a href="#signup" class="card-btn" data-package="vip-night">Reserve</a>
+            </article>
+
+            <article class="package-card reveal">
+              <div class="card-header">
+                <h3>Full Experience</h3>
+                <p class="price">$300</p>
+              </div>
+              <ul>
+                <li>Everything in VIP Night</li>
+                <li>Backstage tour coordination</li>
+                <li>Merch pre-order &amp; delivery</li>
+                <li>Private lounge access</li>
+                <li>Black car service home</li>
+              </ul>
+              <a href="#signup" class="card-btn" data-package="full-experience">Reserve</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sign Up -->
+      <section id="signup" class="section signup" aria-labelledby="signup-heading">
+        <div class="section-inner">
+          <h2 id="signup-heading" class="reveal">Get on the List</h2>
+          <p class="section-intro reveal">Sign up and we'll reach out before your next show.</p>
+          <form id="signup-form" class="reveal" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@email.com" aria-describedby="email-error" />
+                <p class="field-error hidden" id="email-error" role="alert">Please enter a valid email address.</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="package-select">Package Interest</label>
+              <select id="package-select" name="package" required>
+                <option value="">Choose a package</option>
+                <option value="pre-show">Pre-Show — $75</option>
+                <option value="vip-night">VIP Night — $150</option>
+                <option value="full-experience">Full Experience — $300</option>
+              </select>
+            </div>
+            <button type="submit" class="submit-btn">Sign Up</button>
+          </form>
+          <div id="confirmation" class="confirmation hidden" role="alert" aria-live="polite">
+            <div class="confirm-icon">✓</div>
+            <h3>You're on the list.</h3>
+            <p>We'll be in touch before your next Tabernacle night.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Tabernacle Concierge. Independent service — not affiliated with The Tabernacle venue or Live Nation.</p>
+      <p class="photo-credit">Venue photo: "The Tabernacle in Atlanta" via <a href="https://www.exploregeorgia.org" target="_blank" rel="noopener noreferrer">Explore Georgia</a>.</p>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

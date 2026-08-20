@@ -1,0 +1,16 @@
+{
+  "name": "tabernacle-concierge",
+  "version": "1.0.0",
+  "description": "Concierge services landing page for The Tabernacle, Atlanta",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "6.3.5"
+  },
+  "dependencies": {
+    "three": "0.172.0"
+  }
+}
