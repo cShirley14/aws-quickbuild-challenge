@@ -25,6 +25,6 @@ Immersive Three.js landing page for concert venue concierge services. AWS QuickB
 ## Getting Started
 
 ```bash
-# Nix Flakes and direnv assumed
+# Nix and direnv assumed
 cd <project_directory>
 ```
